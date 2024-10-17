@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Dealership</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Dealership
+            </h1>
+            <div>
+                <div class="cart-container" id="cart-container">
+                    <div class="cart-number-container"><p id="cart-number">0</p></div>
+                    <img src="./assets/cart.svg" alt="cart" class="cart" id="cart">
+                    <div class="cart-pop-up" id="cart-pop-up">
+                        <div class="cart-items-list" id="cart-items-list">
+                        </div>
+                        <p>Checkout : <span id="total">0</span>EGP</p>
+                    </div>
+                </div>
+                <button>Log Out</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="./assets/pexels-hrk-gallery-245057798-28576665.jpg" alt="hero" class="hero-image">
+            <h1>
+                Upgrade Your Driving Experience
+            </h1>
+            <button>Explore</button>
+        </div>
+
+
+        <div class="shop">
+            <h1>
+                What's In The Garage
+            </h1>
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <img src="./assets/ampera-axia.png" alt="error">
+                    <div>
+                        <h3>Jeep</h3>
+                        <p>3,000,000 EGP</p>
+                        <p class="desc">One of the best 4x4 on the road with full option</p>
+                    </div>
+                    <button onclick="addToCart1('Jeep',3000000,'./assets/ampera-axia.png',1)">Add To Cart</button>
+                </div>
+
+                <div class="grid-item">
+                    <img src="./assets/arciton-aurora.png" alt="error">
+                    <div>
+                        <h3>Honda</h3>
+                        <p>1,500,000 EGP</p>
+                        <p class="desc">One of the best cross over rear wheel drives on the road with full option</p>
+                    </div>
+                    <button onclick="addToCart1('Honda',1500000,'./assets/arciton-aurora.png',2)">Add To Cart</button>
+
+                </div>
+
+                <div class="grid-item">
+                    <img src="./assets/nexaro-cg6.png" alt="error">
+                    <div>
+                        <h3>Hyundai</h3>
+                        <p>1,000,000 EGP</p>
+                        <p class="desc">One of the best hatchback front wheel drives on the road with full option</p>
+                    </div>
+                    <button onclick="addToCart1('Hyundai',1000000,'./assets/nexaro-cg6.png',3)">Add To Cart</button>
+
+                </div>
+
+                <div class="grid-item">
+                    <img src="./assets/volvo.png" alt="error">
+                    <div>
+                        <h3>volvo</h3>
+                        <p>2,000,000 EGP</p>
+                        <p class="desc">One of the best cross over rear wheel on the road with full option</p>
+                    </div>
+                    <button onclick="addToCart1('Volvo',2000000,'./assets/volvo.png',4)">Add To Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

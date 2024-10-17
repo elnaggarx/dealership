@@ -1,0 +1,271 @@
+@font-face{
+    font-family: "main";
+    src: url("../assets/verdana.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "main";
+}
+header{
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: solid 1px white;
+    z-index: 100;
+}
+nav h1{
+    color: white;
+}
+nav > div{
+    display: flex;
+    align-items: center;
+}
+.cart{
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+}
+.cart-container{
+    position: relative;
+}
+.cart-number-container{
+    position: absolute;
+    top:-40%;
+    left: -10%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.1rem 0.2rem;
+}
+.cart-pop-up{
+    position:absolute;
+    width: 30vw;
+    top:100%;
+    left:-100%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    display: none;
+
+}
+.show{
+    position:absolute;
+    top:100%;
+    left:-600%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+.cart-items-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.cart-item{
+    display: flex;
+    margin-top: 1rem;
+    border-bottom: solid 1px black;
+}
+.image-and-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.image-and-info-container img{
+    width: 40%;
+    
+}
+.cart-inc-dec-container{
+    display: flex;
+    align-items: center;
+}
+.cart-inc-dec-container button{
+    margin: 0 0.3rem;
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 7px;
+}
+nav > div > button{
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+
+
+
+}
+nav > div > button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+.hero-image{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+.hero{
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3rem;
+}
+.hero h1{
+    color: white;
+    font-size: 6rem;
+    width: 60%;
+    margin-top: 2rem;
+}
+.hero > button{
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border:none
+}
+.hero > button:hover{
+    background-color:transparent;
+    transition: all ease-in-out 200ms;
+    color: white;
+    cursor: pointer;
+    border: solid 1px white;
+
+}
+
+
+.shop{
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+}
+.shop > h1{
+    font-size: 3rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    column-gap: 3rem;
+    
+    margin-top: 4rem;
+}
+.grid-item img{
+    width: 100%;
+}
+.grid-item > div{
+    width: 80%;
+}
+.grid-item > div > *{
+    margin-top: 0.5rem;
+}
+.desc{
+    color: #979797;
+}
+.grid-item button{
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border:solid 1px black;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+
+}
+.grid-item button:hover{
+    background-color: transparent;
+    color: black;
+    border:solid 1px black;
+    transition: all ease-in-out 200ms;
+}
+@media screen and (max-width: 768px){
+
+header{
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: solid 1px black;
+    z-index: 100;
+}
+nav h1{
+    color: black;
+}
+nav > div{
+    display: flex;
+    align-items: center;
+}
+.cart{
+    width: 30px;
+    height: 30px;
+    margin-right: 2rem;
+}
+.cart-container{
+    position: relative;
+}
+.cart-number-container{
+    position: absolute;
+    top:-40%;
+    left: -10%;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.1rem 0.2rem;
+}
+
+.show{
+    position:fixed;
+    top:0%;
+    left:0%;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+    .hero{
+        padding-left: 1rem;
+    }
+    .hero h1{
+        color: white;
+        font-size: 4rem;
+        width: 50%;
+        margin-top: 2rem;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        column-gap: 3rem;
+        margin-top: 4rem;
+    }
+}
